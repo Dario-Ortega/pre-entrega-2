@@ -21,4 +21,99 @@
     text-transform: uppercase;
     font-family: 'Roboto', sans-serif;
     font-size: 15px;
+    text-align: center;
+    line-height: 30px;
 }
+
+.nav-inicio-sesion{
+    border: 2px solid black;
+    background: black;
+    border-radius: 20px;
+}
+
+.portada{
+    height: 60vh;
+    background-image: url(../assets/img/fondos/fondo-1.jpg);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.portada-titulo{
+    font-size: 2rem;
+    font-family: 'Josefin Sans', sans-serif;
+    text-align: center;
+    color: white;
+    text-shadow: .1rem .1rem .1rem #333;
+    font-weight: bolder;
+}
+
+.portada-parrafo{
+    font-size: 1.5rem;
+    text-align: center;
+    font-family: 'Josefin Sans', sans-serif;
+    color: white;
+    text-shadow: .1rem .1rem .1rem #333;
+    font-weight: bolder;
+}
+
+.portada-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.boton{
+    padding: 1.5rem 5rem;
+    background: #0769e9;
+    border: 2px solid #0a5fce;
+    cursor: pointer;
+    position: relative;
+    border-radius: .3rem;
+    overflow: hidden;
+}
+
+.boton::before{
+    content:'Registrate';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 1rem;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: .3rem;
+    font-weight: 700;
+    text-shadow: .1rem .1rem .1rem #333;
+    transition: .3s ease;
+}
+
+.boton::after{
+    content:'Gratis';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    font-size: 1rem;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: .3rem;
+    font-weight: 700;
+    text-shadow: .1rem .1rem .1rem #333;
+    transition: .3s ease;
+}
+
+.boton:hover::before{
+    transform: translate(-50%, -50%) scale(3);
+    opacity: 0;
+}
+
+.boton:hover::after{
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 1;
+}
+
+
+
