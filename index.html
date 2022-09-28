@@ -21,7 +21,7 @@
     <div class="container-fluid header">
         <nav class="navbar navbar-expand-md navbar-dark">
             <div class="container-fluid">
-                <a href="#" class="navbar-brand header-titulo">Compra Gamer</a>
+                <a href="#" class="navbar-brand header-titulo"><img src="./assets/img/fondos/logo-fix.png" alt=""></a>
                 <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
                     <span class="navbar-toggler-icon"></span>
                 </button>
@@ -64,6 +64,39 @@
 
         <section class="novedades">
             <h2 class="novedades-titulo">Ultimas Novedades</h2>
+
+            <div class="novedades-carrusel">
+                <div id="carousel" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active data-bs-interval=3" data-bs-interval="10000">
+                            <img src="./assets/img/carrusel/novedades-1.jpg" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item data-bs-interval=3" data-bs-interval="2000">
+                            <img src="./assets/img/carrusel/novedades-2.jpg" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item data-bs-interval=3">
+                            <img src="./assets/img/carrusel/novedades-3.jpg" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item data-bs-interval=3">
+                            <img src="./assets/img/carrusel/novedades-4.jpg" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item data-bs-interval=3">
+                            <img src="./assets/img/carrusel/novedades-5.jpg" class="d-block w-100" alt="...">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carousel"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carousel"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+
             <div class="novedades-slider">
                 <article class="novedades-producto">
                     <img src="./assets/img/productos/monitor-27-philips-curvo-271e1sca55.jpg" alt=""
@@ -132,24 +165,25 @@
 
     <footer class="footer">
         <section class="footer-contacto">
-        <div class="redes">
-            <ul>
-                <h4 class="redes-titulo">Seguinos en:</h4>
-                <li><a href="#" class="facebook"><i class="bi bi-facebook"></i></a></li>
-                <li><a href="#" class="twitter"><i class="bi bi-twitter"></i></a></li>
-                <li><a href="#" class="youtube"><i class="bi bi-youtube"></i></a></li>
-                <li><a href="#" class="instagram"><i class="bi bi-instagram"></i></a></li>
-            </ul>
-        </div>
-        <div class="ayuda">
-            <h4 class="ayuda-titulo">Ayuda:</h4>
-            <p class="ayuda-parrafo">Si tenés sugerencias o comentarios</p>
-            <a href="#" class="ayuda-btn">Contactanos</a>
-        </div>
-    </section>
+            <div class="redes">
+                <ul>
+                    <h4 class="redes-titulo">Seguinos en:</h4>
+                    <li><a href="#" class="facebook"><i class="bi bi-facebook"></i></a></li>
+                    <li><a href="#" class="twitter"><i class="bi bi-twitter"></i></a></li>
+                    <li><a href="#" class="youtube"><i class="bi bi-youtube"></i></a></li>
+                    <li><a href="#" class="instagram"><i class="bi bi-instagram"></i></a></li>
+                </ul>
+            </div>
+            <div class="ayuda">
+                <h4 class="ayuda-titulo">Ayuda:</h4>
+                <p class="ayuda-parrafo">Si tenés sugerencias o comentarios</p>
+                <a href="#" class="ayuda-btn">Contactanos</a>
+            </div>
+        </section>
 
         <div class="marca">
-            <p>Las marcas y logos de compragamer.com compragamer.com/tv compragamer.com/reviews son propiedad de Newton Station SRL <br>
+            <p>Las marcas y logos de compragamer.com compragamer.com/tv compragamer.com/reviews son propiedad de Newton
+                Station SRL <br>
                 Todos los derechos reservados 2017 </p>
         </div>
     </footer>
