@@ -4,6 +4,8 @@
     box-sizing: border-box;
 }
 
+/* ----Inicio---- */
+
 .header{
     background-color: #0769e9;
 }
@@ -30,6 +32,8 @@
     background: black;
     border-radius: 20px;
 }
+
+/* Portada */
 
 .portada{
     height: 60vh;
@@ -115,5 +119,109 @@
     opacity: 1;
 }
 
+/* Novedades */
 
+.novedades-titulo{
+    background-color: #0769e9;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.6rem;
+    text-transform: uppercase;
+    letter-spacing: .2rem;
+    font-weight: 700;
+    text-shadow: .1rem .1rem .1rem #333;
+    color: white;
+    text-align: center;
+}
 
+.novedades-slider{
+    padding: 15px;
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    overflow: auto;
+}
+
+.novedades-producto{
+    margin: 15px;
+    width: 350px;
+    height: 450px;
+    box-shadow: 0 1px 6px 1px rgba(0, 0, 0, .2);
+    display: block;
+    align-items: center;
+    justify-content: center;
+}
+
+.novedades-img{
+    width: 350px;
+    height: 350px;
+}
+
+.novedades-titulo-producto{
+    font-family: 'Prompt', sans-serif;
+    font-size: 1.6rem;
+    text-align: center;
+    text-shadow: .1rem .1rem .1rem rgb(75, 75, 75);
+    text-transform: uppercase;
+    font-weight: 400;
+}
+
+.novedades-cont-boton{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.novedades-boton{
+    padding: 1.5rem 5rem;
+    background: #0769e9;
+    border: 2px solid #0a5fce;
+    cursor: pointer;
+    position: relative;
+    border-radius: .3rem;
+    overflow: hidden;
+}
+
+.novedades-boton::before{
+    content:'Precio';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 1rem;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: .3rem;
+    font-weight: 700;
+    text-shadow: .1rem .1rem .1rem #333;
+    transition: .3s ease;
+}
+
+.novedades-boton::after{
+    content:'Comprar';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    font-size: 1rem;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: .3rem;
+    font-weight: 700;
+    text-shadow: .1rem .1rem .1rem #333;
+    transition: .3s ease;
+}
+
+.novedades-boton:hover::before{
+    transform: translate(-50%, -50%) scale(3);
+    opacity: 0;
+}
+
+.novedades-boton:hover::after{
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 1;
+}
+
+.novedades-boton:hover{
+    border: 2px solid #aa1a1a;
+    background: #aa1a1a;
+}
