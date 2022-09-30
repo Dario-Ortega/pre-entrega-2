@@ -40,7 +40,48 @@
                             <a class="nav-link active" href="#">Contacto</a>
                         </li>
                         <li class="nav-item nav-inicio-sesion">
-                            <a class="nav-link active" href="#">Iniciar sesión</a>
+                            <a type="button" class="btn btn-success" href="#" data-bs-toggle="modal"
+                                data-bs-target="#iniciar-sesion">
+                                Iniciar Sesion
+                            </a>
+
+                            <div class="modal fade" id="iniciar-sesion" tabindex="-1" aria-labelledby="iniciar-sesion"
+                                aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-centered .modal-lg">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h1 class="modal-title fs-3" id="iniciar-sesion">Iniciar Sesion</h1>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <form action="">
+                                                <div class="row mb-3 p-3">
+                                                    <label for="usuario" class="col-3 col-form-label">Usuario</label>
+                                                    <div class="col-9">
+                                                        <input type="text" class="form-control" id="usuario" name="" value="">
+                                                    </div>
+                                                </div>
+                                                <div class="row mb-3 p-3">
+                                                    <label for="pass" class="col-3 col-form-label">Contraseña</label>
+                                                    <div class="col-9">
+                                                        <input type="password" class="form-control " id="pass" name="" value="">
+                                                    </div>
+                                                </div>
+                                            </form>
+                                        </div>
+                                        <div class="modal-content">
+                                            <div class="p-1">
+                                            <a type="submit" class="btn btn-success" href="#" name="button">Continuar</a>
+                                        </div>
+                                        <div>
+                                            <a type="button" class="btn btn-success" href="#"
+                                                data-bs-dismiss="modal">Registrarse</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </li>
                     </ul>
                 </div>
