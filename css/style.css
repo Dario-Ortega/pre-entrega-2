@@ -748,3 +748,121 @@ a{
     }
     
 }
+
+/* ----Juegos---- */
+.juegos{
+    background: #edede9;
+}
+
+.juegos-titulo{
+    background-color: #0769e9;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.6rem;
+    text-transform: uppercase;
+    letter-spacing: .2rem;
+    font-weight: 700;
+    text-shadow: .1rem .1rem .1rem #333;
+    color: white;
+    text-align: center;
+}
+
+.juegos-contenedor{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.juegos-articulo{
+    margin: 3px;
+    width: 350px;
+    height: 450px;
+    box-shadow: 0 1px 6px 1px rgba(0, 0, 0, .2);
+    display: block;
+    align-items: center;
+    justify-content: center;
+}
+
+.juegos-img{
+    width: 350px;
+    height: 350px;
+}
+
+.juegos__titulo{
+    font-family: 'Prompt', sans-serif;
+    font-size: 1.6rem;
+    text-align: center;
+    text-shadow: .1rem .1rem .1rem rgb(75, 75, 75);
+    text-transform: uppercase;
+    font-weight: 400;
+}
+
+.juegos-cont-boton{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.juegos-boton{
+    padding: 1.5rem 5rem;
+    background: #0769e9;
+    border: 2px solid #0a5fce;
+    cursor: pointer;
+    position: relative;
+    border-radius: .3rem;
+    overflow: hidden;
+}
+
+.juegos-boton::before{
+    content:'Precio';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 1rem;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: .3rem;
+    font-weight: 700;
+    text-shadow: .1rem .1rem .1rem #333;
+    transition: .3s ease;
+}
+
+.juegos-boton::after{
+    content:'Comprar';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    font-size: 1rem;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: .3rem;
+    font-weight: 700;
+    text-shadow: .1rem .1rem .1rem #333;
+    transition: .3s ease;
+}
+
+.juegos-boton:hover::before{
+    transform: translate(-50%, -50%) scale(3);
+    opacity: 0;
+}
+
+.juegos-boton:hover::after{
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 1;
+}
+
+.juegos-boton:hover{
+    border: 2px solid #aa1a1a;
+    background: #aa1a1a;
+}
+
+@media (min-width:760px){
+    .juegos-contenedor{
+        flex-wrap: wrap;
+        flex-direction: unset;
+        justify-content: center;
+    }
+    
+}
