@@ -18,75 +18,78 @@
 
 <body>
 
-    <div class="container-fluid header">
-        <nav class="navbar navbar-expand-md navbar-dark">
-            <div class="container-fluid">
+    <header class="container-fluid header">
+        <nav class="navbar navbar-expand-xl navbar-dark">
+            <div class="container">
                 <a href="#" class="navbar-brand header-titulo"><img src="./assets/img/fondos/logo-fix.png" alt=""></a>
                 <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div id="menu" class="collapse navbar-collapse justify-content-end">
+                <div id="menu" class="collapse navbar-collapse justify-content-center">
                     <ul class="navbar-nav ms-3 nav-texto">
                         <li class="nav-item">
-                            <a class="nav-link active" href="#">Inicio</a>
+                            <a class="nav-link active" href="./index.html">Inicio</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active" href="#">Productos</a>
+                            <a class="nav-link active" href="./pages/productos.html">Productos</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active" href="#">Juegos</a>
+                            <a class="nav-link active" href="./pages/juegos.html">Juegos</a>
                         </li>
                         <li class="nav-item ">
-                            <a class="nav-link active" href="#">Contacto</a>
+                            <a class="nav-link active" href="./pages/contacto.html">Contacto</a>
                         </li>
                         <li class="nav-item nav-inicio-sesion">
-                            <a type="button" class="btn btn-success" href="#" data-bs-toggle="modal"
+                            <button type="button" class="btn btn-success" data-bs-toggle="modal"
                                 data-bs-target="#iniciar-sesion">
-                                Iniciar Sesion
-                            </a>
-
-                            <div class="modal fade" id="iniciar-sesion" tabindex="-1" aria-labelledby="iniciar-sesion"
-                                aria-hidden="true">
-                                <div class="modal-dialog modal-dialog-centered .modal-lg">
-                                    <div class="modal-content">
-                                        <div class="modal-header">
-                                            <h1 class="modal-title fs-3" id="iniciar-sesion">Iniciar Sesion</h1>
-                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                                aria-label="Close"></button>
-                                        </div>
-                                        <div class="modal-body">
-                                            <form action="">
-                                                <div class="row mb-3 p-3">
-                                                    <label for="usuario" class="col-3 col-form-label">Usuario</label>
-                                                    <div class="col-9">
-                                                        <input type="text" class="form-control" id="usuario" name="" value="">
-                                                    </div>
-                                                </div>
-                                                <div class="row mb-3 p-3">
-                                                    <label for="pass" class="col-3 col-form-label">Contraseña</label>
-                                                    <div class="col-9">
-                                                        <input type="password" class="form-control " id="pass" name="" value="">
-                                                    </div>
-                                                </div>
-                                            </form>
-                                        </div>
-                                        <div class="modal-content">
-                                            <div class="p-1">
-                                            <a type="submit" class="btn btn-success" href="#" name="button">Continuar</a>
-                                        </div>
-                                        <div>
-                                            <a type="button" class="btn btn-success" href="#"
-                                                data-bs-dismiss="modal">Registrarse</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+                                Acceder
+                            </button>
                         </li>
                     </ul>
+                    <form class="d-flex p-3 justify-content-center justify-content-xl-end" role="buscar">
+                        <input class="form-control me-2 w-50" type="buscar" placeholder="Buscar" aria-label="Buscar">
+                        <button class="btn btn-outline-success active" type="submit"><i
+                                class="bi bi-search"></i></button>
+                    </form>
                 </div>
         </nav>
-    </div>
+
+        <!-- Modal -->
+        <div class="modal fade" id="iniciar-sesion" tabindex="-1" aria-labelledby="iniciar-sesion" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered .modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-3" id="iniciar-sesion">Iniciar Sesion</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <form action="">
+                            <div class="row mb-3 p-3">
+                                <label for="usuario" class="col-3 col-form-label">Usuario</label>
+                                <div class="col-9">
+                                    <input type="text" class="form-control" id="usuario" name="" value="">
+                                </div>
+                            </div>
+                            <div class="row mb-3 p-3">
+                                <label for="pass" class="col-3 col-form-label">Contraseña</label>
+                                <div class="col-9">
+                                    <input type="password" class="form-control " id="pass" name="" value="">
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="modal-content">
+                        <div class="p-1">
+                            <a type="submit" class="btn btn-success" href="./index.html" name="button">Continuar</a>
+                        </div>
+                        <div>
+                            <a type="button" class="btn btn-success" href="./pages/registrarse.html">Registrarse</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
 
     <main>
 
@@ -98,7 +101,7 @@
                     precios
                     más bajo del mercado.</p>
                 <div class="portada-btn">
-                    <button class="boton"></button>
+                    <a class="boton" href="./pages/registrarse.html"></a>
                 </div>
             </div>
         </section>
@@ -107,95 +110,91 @@
             <h2 class="novedades-titulo">Ultimas Novedades</h2>
 
             <div class="novedades-carrusel">
-                <div id="carousel" class="carousel slide" data-bs-ride="carousel">
+                <div id="carousel-novedades" class="carousel slide" data-bs-ride="carousel">
                     <div class="carousel-inner">
-                        <div class="carousel-item active data-bs-interval=3" data-bs-interval="10000">
+                        <div class="carousel-item active" data-bs-interval="5000">
                             <img src="./assets/img/carrusel/novedades-1.jpg" class="d-block w-100" alt="...">
                         </div>
-                        <div class="carousel-item data-bs-interval=3" data-bs-interval="2000">
+                        <div class="carousel-item" data-bs-interval="5000">
                             <img src="./assets/img/carrusel/novedades-2.jpg" class="d-block w-100" alt="...">
                         </div>
-                        <div class="carousel-item data-bs-interval=3">
+                        <div class="carousel-item" data-bs-interval="5000">
                             <img src="./assets/img/carrusel/novedades-3.jpg" class="d-block w-100" alt="...">
                         </div>
-                        <div class="carousel-item data-bs-interval=3">
+                        <div class="carousel-item" data-bs-interval="5000">
                             <img src="./assets/img/carrusel/novedades-4.jpg" class="d-block w-100" alt="...">
                         </div>
-                        <div class="carousel-item data-bs-interval=3">
-                            <img src="./assets/img/carrusel/novedades-5g.jpg" class="d-block w-100" alt="...">
+                        <div class="carousel-item" data-bs-interval="5000">
+                            <img src="./assets/img/carrusel/novedades-5.jpg" class="d-block w-100" alt="...">
                         </div>
                     </div>
-                    <button class="carousel-control-prev" type="button" data-bs-target="#carousel"
-                        data-bs-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Previous</span>
-                    </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#carousel"
-                        data-bs-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Next</span>
-                    </button>
                 </div>
             </div>
 
             <div class="novedades-slider">
                 <article class="novedades-producto">
-                    <img src="./assets/img/productos/monitor-27-philips-curvo-271e1sca55.jpg" alt=""
+                    <img src="./assets/img/productos/monitor-27-philips-curvo-271e1sca55.jpg" alt="monitor-27-pulgadas-curvo"
                         class="novedades-img">
                     <div class="novedades-cont">
-                        <h3 class="novedades-titulo-producto">Titulo</h3>
+                        <h3 class="novedades-titulo-producto">Monitor 27" Philips Curvo</h3>
+                        <p class="novedades-precio">$57.780</p>
                         <div class="novedades-cont-boton">
-                            <button class="novedades-boton"></button>
+                            <a class="novedades-boton">¡Comprar!</a>
                         </div>
                     </div>
                 </article>
                 <article class="novedades-producto">
-                    <img src="./assets/img/productos/monitor-27-philips-curvo-271e1sca55.jpg" alt=""
+                    <img src="./assets/img/juegos/batman-arkham-collection.jpeg" alt="batman-collection"
                         class="novedades-img">
                     <div class="novedades-cont">
-                        <h3 class="novedades-titulo-producto">Titulo</h3>
+                        <h3 class="novedades-titulo-producto">Batman Arkham Collection</h3>
+                        <p class="novedades-precio">$2.000</p>
                         <div class="novedades-cont-boton">
-                            <button class="novedades-boton"></button>
+                            <a class="novedades-boton">¡Comprar!</a>
                         </div>
                     </div>
                 </article>
                 <article class="novedades-producto">
-                    <img src="./assets/img/productos/monitor-27-philips-curvo-271e1sca55.jpg" alt=""
+                    <img src="./assets/img/productos/consola-sony-playstation-5-ps5-con-lectora.jpg" alt="playstation-5"
                         class="novedades-img">
                     <div class="novedades-cont">
-                        <h3 class="novedades-titulo-producto">Titulo</h3>
+                        <h3 class="novedades-titulo-producto">Playstation 5</h3>
+                        <p class="novedades-precio">$240.000</p>
                         <div class="novedades-cont-boton">
-                            <button class="novedades-boton"></button>
+                            <a class="novedades-boton">¡Comprar!</a>
                         </div>
                     </div>
                 </article>
                 <article class="novedades-producto">
-                    <img src="./assets/img/productos/monitor-27-philips-curvo-271e1sca55.jpg" alt=""
+                    <img src="./assets/img/productos/video-geforce-rtx-3080-10gb-msi-gaming-z-trio-lhr.jpg" alt="nvidia-3080"
                         class="novedades-img">
                     <div class="novedades-cont">
-                        <h3 class="novedades-titulo-producto">Titulo</h3>
+                        <h3 class="novedades-titulo-producto">Nvidia RTX 3080</h3>
+                        <p class="novedades-precio">$283.000</p>
                         <div class="novedades-cont-boton">
-                            <button class="novedades-boton"></button>
+                            <a class="novedades-boton">¡Comprar!</a>
                         </div>
                     </div>
                 </article>
                 <article class="novedades-producto">
-                    <img src="./assets/img/productos/monitor-27-philips-curvo-271e1sca55.jpg" alt=""
+                    <img src="./assets/img/juegos/cyberpunk-2077.jpeg" alt="cyberpunk-2077"
                         class="novedades-img">
                     <div class="novedades-cont">
-                        <h3 class="novedades-titulo-producto">Titulo</h3>
+                        <h3 class="novedades-titulo-producto">Cyberpunk 2077</h3>
+                        <p class="novedades-precio">$1.700</p>
                         <div class="novedades-cont-boton">
-                            <button class="novedades-boton"></button>
+                            <a class="novedades-boton">¡Comprar!</a>
                         </div>
                     </div>
                 </article>
                 <article class="novedades-producto">
-                    <img src="./assets/img/productos/monitor-27-philips-curvo-271e1sca55.jpg" alt=""
+                    <img src="./assets/img/productos/combo-redragon-mouse--pad-m601wlba.jpg" alt="combo-mouse"
                         class="novedades-img">
                     <div class="novedades-cont">
-                        <h3 class="novedades-titulo-producto">Titulo</h3>
+                        <h3 class="novedades-titulo-producto">Combo Redragon Mouse</h3>
+                        <p class="novedades-precio">$2.600</p>
                         <div class="novedades-cont-boton">
-                            <button class="novedades-boton"></button>
+                            <a class="novedades-boton">¡Comprar!</a>
                         </div>
                     </div>
                 </article>
@@ -209,10 +208,14 @@
             <div class="redes">
                 <ul>
                     <h4 class="redes-titulo">Seguinos en:</h4>
-                    <li><a href="#" class="facebook"><i class="bi bi-facebook"></i></a></li>
-                    <li><a href="#" class="twitter"><i class="bi bi-twitter"></i></a></li>
-                    <li><a href="#" class="youtube"><i class="bi bi-youtube"></i></a></li>
-                    <li><a href="#" class="instagram"><i class="bi bi-instagram"></i></a></li>
+                    <li><a href="https://www.facebook.com" target="_blank" class="facebook"><i
+                                class="bi bi-facebook"></i></a></li>
+                    <li><a href="https://twitter.com" target="_blank" class="twitter"><i class="bi bi-twitter"></i></a>
+                    </li>
+                    <li><a href="https://www.youtube.com/" target="_blank" class="youtube"><i
+                                class="bi bi-youtube"></i></a></li>
+                    <li><a href="https://www.instagram.com" target="_blank" class="instagram"><i
+                                class="bi bi-instagram"></i></a></li>
                 </ul>
             </div>
             <div class="ayuda">
