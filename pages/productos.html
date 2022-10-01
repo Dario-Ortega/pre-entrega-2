@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -14,270 +15,314 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
     <title>Productos</title>
 </head>
+
 <body>
-    
+
     <header class="container-fluid header">
         <nav class="navbar navbar-expand-xl navbar-dark">
             <div class="container">
-                <a href="#" class="navbar-brand header-titulo"><img src="../assets/img/fondos/logo-fix.png" alt=""></a>
+                <a href="../index.html" class="navbar-brand header-titulo"><img src="../assets/img/fondos/logo-fix.png"
+                        alt=""></a>
                 <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div id="menu" class="collapse navbar-collapse justify-content-center">
                     <ul class="navbar-nav ms-3 nav-texto">
                         <li class="nav-item">
-                            <a class="nav-link active" href="#">Inicio</a>
+                            <a class="nav-link active" href="../index.html">Inicio</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active" href="#">Productos</a>
+                            <a class="nav-link active" href="../pages/productos.html">Productos</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active" href="#">Juegos</a>
+                            <a class="nav-link active" href="../pages/juegos.html">Juegos</a>
                         </li>
                         <li class="nav-item ">
-                            <a class="nav-link active" href="#">Contacto</a>
+                            <a class="nav-link active" href="../pages/contacto.html">Contacto</a>
                         </li>
                         <li class="nav-item nav-inicio-sesion">
-                            <a type="button" class="btn btn-success" href="#" data-bs-toggle="modal"
+                            <button type="button" class="btn btn-success" data-bs-toggle="modal"
                                 data-bs-target="#iniciar-sesion">
-                                Iniciar Sesion
-                            </a>
-
-                            <div class="modal fade" id="iniciar-sesion" tabindex="-1" aria-labelledby="iniciar-sesion"
-                                aria-hidden="true">
-                                <div class="modal-dialog modal-dialog-centered .modal-lg">
-                                    <div class="modal-content">
-                                        <div class="modal-header">
-                                            <h1 class="modal-title fs-3" id="iniciar-sesion">Iniciar Sesion</h1>
-                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                                aria-label="Close"></button>
-                                        </div>
-                                        <div class="modal-body">
-                                            <form action="">
-                                                <div class="row mb-3 p-3">
-                                                    <label for="usuario" class="col-3 col-form-label">Usuario</label>
-                                                    <div class="col-9">
-                                                        <input type="text" class="form-control" id="usuario" name="" value="">
-                                                    </div>
-                                                </div>
-                                                <div class="row mb-3 p-3">
-                                                    <label for="pass" class="col-3 col-form-label">Contraseña</label>
-                                                    <div class="col-9">
-                                                        <input type="password" class="form-control " id="pass" name="" value="">
-                                                    </div>
-                                                </div>
-                                            </form>
-                                        </div>
-                                        <div class="modal-content">
-                                            <div class="p-1">
-                                            <a type="submit" class="btn btn-success" href="#" name="button">Continuar</a>
-                                        </div>
-                                        <div>
-                                            <a type="button" class="btn btn-success" href="#"
-                                                data-bs-dismiss="modal">Registrarse</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+                                Acceder
+                            </button>
                         </li>
                     </ul>
                     <form class="d-flex p-3 justify-content-center justify-content-xl-end" role="buscar">
                         <input class="form-control me-2 w-50" type="buscar" placeholder="Buscar" aria-label="Buscar">
-                        <button class="btn btn-outline-success active" type="submit"><i class="bi bi-search"></i></button>
+                        <button class="btn btn-outline-success active" type="submit"><i
+                                class="bi bi-search"></i></button>
                     </form>
                 </div>
-                
         </nav>
+
+        <!-- Modal -->
+        <div class="modal fade" id="iniciar-sesion" tabindex="-1" aria-labelledby="iniciar-sesion" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered .modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-3" id="iniciar-sesion">Iniciar Sesion</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <form action="">
+                            <div class="row mb-3 p-3">
+                                <label for="usuario" class="col-3 col-form-label">Usuario</label>
+                                <div class="col-9">
+                                    <input type="text" class="form-control" id="usuario" name="" value="">
+                                </div>
+                            </div>
+                            <div class="row mb-3 p-3">
+                                <label for="pass" class="col-3 col-form-label">Contraseña</label>
+                                <div class="col-9">
+                                    <input type="password" class="form-control " id="pass" name="" value="">
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="modal-content d-flex justify-content-between align-items-center">
+                        <div class="p-1">
+                            <a type="submit" class="btn btn-success " href="../index.html" name="button">Continuar</a>
+                        </div>
+                        <div>
+                            <a type="button" class="btn btn-success" href="../pages/registrarse.html">Registrarse</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </header>
 
     <main>
 
         <section class="productos">
-        <h1 class="productos-titulo">Productos</h1>
-        <div class="productos-contenedor container">
-        <article class="productos-articulo">
-            <img src="../assets/img/productos/combo-redragon-mouse--pad-m601wlba.jpg" alt=""
-                class="productos-img">
-            <div class="productos-cont">
-                <h3 class="productos__titulo">Titulo</h3>
-                <div class="productos-cont-boton">
-                    <button class="productos-boton"></button>
+            <h1 class="productos-titulo">Productos</h1>
+            <div class="novedades-carrusel container">
+                <div id="carousel-novedades" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active" data-bs-interval="5000">
+                            <img src="../assets/img/carrusel/producto-1.jpg" class="d-block w-100"
+                                alt="imagen-memoria-ram-orion">
+                        </div>
+                        <div class="carousel-item" data-bs-interval="5000">
+                            <img src="../assets/img/carrusel/producto-2.jpg" class="d-block w-100"
+                                alt="imagen-procesador-intel">
+                        </div>
+                        <div class="carousel-item" data-bs-interval="5000">
+                            <img src="../assets/img/carrusel/producto-3.jpg" class="d-block w-100"
+                                alt="imagen-fuente-pc-gamer">
+                        </div>
+                        <div class="carousel-item" data-bs-interval="5000">
+                            <img src="../assets/img/carrusel/producto-4.jpg" class="d-block w-100"
+                                alt="imagen-notebook-asus">
+                        </div>
+                        <div class="carousel-item" data-bs-interval="5000">
+                            <img src="../assets/img/carrusel/producto-5.jpg" class="d-block w-100"
+                                alt="imagen-pc-placa">
+                        </div>
+                    </div>
                 </div>
             </div>
-        </article>
-        <article class="productos-articulo">
-            <img src="../assets/img/productos/combo-redragon-mouse--pad-m601wlba.jpg" alt=""
-                class="productos-img">
-            <div class="productos-cont">
-                <h3 class="productos__titulo">Titulo</h3>
-                <div class="productos-cont-boton">
-                    <button class="productos-boton"></button>
-                </div>
+            <div class="productos-contenedor">
+                <article class="productos-articulo">
+                    <img src="../assets/img/productos/combo-redragon-mouse--pad-m601wlba.jpg" alt="combo-redragon-mouse"
+                        class="productos-img">
+                    <div class="productos-cont">
+                        <h3 class="productos__titulo">Combo Redragon Mouse</h3>
+                        <p class="productos-precio">$2.600</p>
+                        <div class="productos-cont-boton">
+                            <a class="productos-boton">¡Comprar!</a>
+                        </div>
+                    </div>
+                </article>
+                <article class="productos-articulo">
+                    <img src="../assets/img/productos/auriculares-corsair-gaming-hs35-green.jpg" alt="auriculares-corsair-gaming-hs35-green"
+                        class="productos-img">
+                    <div class="productos-cont">
+                        <h3 class="productos__titulo">Auriculares Corsair HS35</h3>
+                        <p class="productos-precio">$10.257</p>
+                        <div class="productos-cont-boton">
+                            <a class="productos-boton">¡Comprar!</a>
+                        </div>
+                    </div>
+                </article>
+                <article class="productos-articulo">
+                    <img src="../assets/img/productos/auriculares-corsair-hs35-stereo-gaming-carbon.jpg" alt="auriculares-corsair-hs35-stereo-gaming-carbon"
+                        class="productos-img">
+                    <div class="productos-cont">
+                        <h3 class="productos__titulo">Auriculares Corsair Carbon</h3>
+                        <p class="productos-precio">$10.260</p>
+                        <div class="productos-cont-boton">
+                            <a class="productos-boton">¡Comprar!</a>
+                        </div>
+                    </div>
+                </article>
+                <article class="productos-articulo">
+                    <img src="../assets/img/productos/consola-sony-playstation-5-ps5-con-lectora.jpg" alt="consola-sony-playstation-5-ps5-con-lectora"
+                        class="productos-img">
+                    <div class="productos-cont">
+                        <h3 class="productos__titulo">Playstation 5</h3>
+                        <p class="productos-precio">$240.000</p>
+                        <div class="productos-cont-boton">
+                            <a class="productos-boton">¡Comprar!</a>
+                        </div>
+                    </div>
+                </article>
+                <article class="productos-articulo">
+                    <img src="../assets/img/productos/google-chromecast-3-generacion-black-strafo-spilas.jpg" alt="google-chromecast-3-generacion-black-strafo-spilas"
+                        class="productos-img">
+                    <div class="productos-cont">
+                        <h3 class="productos__titulo">Google Chromecast 3</h3>
+                        <p class="productos-precio">$10.890</p>
+                        <div class="productos-cont-boton">
+                            <a class="productos-boton">¡Comprar!</a>
+                        </div>
+                    </div>
+                </article>
+                <article class="productos-articulo">
+                    <img src="../assets/img/productos/hd-hdd-1tb-wd-blue-sata-iii-35.jpg" alt="hd-hdd-1tb-wd-blue-sata-iii-35"
+                        class="productos-img">
+                    <div class="productos-cont">
+                        <h3 class="productos__titulo">Blue SATA 1TB</h3>
+                        <p class="productos-precio">$7.680</p>
+                        <div class="productos-cont-boton">
+                            <a class="productos-boton">¡Comprar!</a>
+                        </div>
+                    </div>
+                </article>
+                <article class="productos-articulo">
+                    <img src="../assets/img/productos/monitor-27-philips-curvo-271e1sca55.jpg" alt="monitor-27-pulgadas-curvo"
+                        class="productos-img">
+                    <div class="productos-cont">
+                        <h3 class="productos__titulo">Monitor 27" Philips Curvo</h3>
+                        <p class="productos-precio">$57.780</p>
+                        <div class="productos-cont-boton">
+                            <a class="productos-boton">¡Comprar!</a>
+                        </div>
+                    </div>
+                </article>
+                <article class="productos-articulo">
+                    <img src="../assets/img/productos/mother-gigabyte-b660m-aorus-pro-ddr4-s1700.jpg" alt="mother-gigabyte-b660m-aorus-pro-ddr4-s1700"
+                        class="productos-img">
+                    <div class="productos-cont">
+                        <h3 class="productos__titulo">Mother Aorus PRO S1700</h3>
+                        <p class="productos-precio">$45.787</p>
+                        <div class="productos-cont-boton">
+                            <a class="productos-boton">¡Comprar!</a>
+                        </div>
+                    </div>
+                </article>
+                <article class="productos-articulo">
+                    <img src="../assets/img/productos/notebook-hp-156-250-g8-i71165g7-8gb-512gb.jpg" alt="notebook-hp-156-250-g8-i71165g7-8gb-512gb"
+                        class="productos-img">
+                    <div class="productos-cont">
+                        <h3 class="productos__titulo">Notebook HP I7-1165G7</h3>
+                        <p class="productos-precio">$57.780</p>
+                        <div class="productos-cont-boton">
+                            <a class="productos-boton">¡Comprar!</a>
+                        </div>
+                    </div>
+                </article>
+                <article class="productos-articulo">
+                    <img src="../assets/img/productos/parlantes-marvo-sg265-rgb.jpg" alt="parlantes-marvo-sg265-rgb"
+                        class="productos-img">
+                    <div class="productos-cont">
+                        <h3 class="productos__titulo">Parlantes Marvo SG-265</h3>
+                        <p class="productos-precio">$3.211</p>
+                        <div class="productos-cont-boton">
+                            <a class="productos-boton">¡Comprar!</a>
+                        </div>
+                    </div>
+                </article>
+                <article class="productos-articulo">
+                    <img src="../assets/img/productos/pc-asus-ryzen-3-3200g--2x4gb--ssd--1tb--wifi.jpg" alt="pc-asus-ryzen-3-3200g--2x4gb--ssd--1tb--wifi"
+                        class="productos-img">
+                    <div class="productos-cont">
+                        <h3 class="productos__titulo">PC ASUS RYZEN 3 3200G</h3>
+                        <p class="productos-precio">$71.420</p>
+                        <div class="productos-cont-boton">
+                            <a class="productos-boton">¡Comprar!</a>
+                        </div>
+                    </div>
+                </article>
+                <article class="productos-articulo">
+                    <img src="../assets/img/productos/pc-intel-core-i7-10700k--1tb--z490.jpg" alt="pc-intel-core-i7-10700k--1tb--z490"
+                        class="productos-img">
+                    <div class="productos-cont">
+                        <h3 class="productos__titulo">PC INTEL CORE I7 10700k</h3>
+                        <p class="productos-precio">$163.421</p>
+                        <div class="productos-cont-boton">
+                            <a class="productos-boton">¡Comprar!</a>
+                        </div>
+                    </div>
+                </article>
+                <article class="productos-articulo">
+                    <img src="../assets/img/productos/pc-intel-g5905-8gb-hd-ssd-240gb.jpg" alt="pc-intel-g5905-8gb-hd-ssd-240gb"
+                        class="productos-img">
+                    <div class="productos-cont">
+                        <h3 class="productos__titulo">PC INTEL G5905</h3>
+                        <p class="productos-precio">$45.780</p>
+                        <div class="productos-cont-boton">
+                            <a class="productos-boton">¡Comprar!</a>
+                        </div>
+                    </div>
+                </article>
+                <article class="productos-articulo">
+                    <img src="../assets/img/productos/silla-gamer.jpg" alt="silla-gamer"
+                        class="productos-img">
+                    <div class="productos-cont">
+                        <h3 class="productos__titulo">Silla Gamer Aureox G400</h3>
+                        <p class="productos-precio">$54.178</p>
+                        <div class="productos-cont-boton">
+                            <a class="productos-boton">¡Comprar!</a>
+                        </div>
+                    </div>
+                </article>
+                <article class="productos-articulo">
+                    <img src="../assets/img/productos/teclado-aureox-battletag-gaming-gk400.jpg" alt="teclado-aureox-battletag-gaming-gk400"
+                        class="productos-img">
+                    <div class="productos-cont">
+                        <h3 class="productos__titulo">Teclado Aureox GK400</h3>
+                        <p class="productos-precio">$3.420</p>
+                        <div class="productos-cont-boton">
+                            <a class="productos-boton">¡Comprar!</a>
+                        </div>
+                    </div>
+                </article>
+                <article class="productos-articulo">
+                    <img src="../assets/img/productos/video-geforce-rtx-3080-10gb-msi-gaming-z-trio-lhr.jpg" alt="video-geforce-rtx-3080-10gb-msi-gaming-z-trio-lhr"
+                        class="productos-img">
+                    <div class="productos-cont">
+                        <h3 class="productos__titulo">Nvidia RTX 3080</h3>
+                        <p class="productos-precio">$283.000</p>
+                        <div class="productos-cont-boton">
+                            <a class="productos-boton">¡Comprar!</a>
+                        </div>
+                    </div>
+                </article>
+                <article class="productos-articulo">
+                    <img src="../assets/img/productos/watercooler-thermaltake-th120-aio-argb.jpg" alt="watercooler-thermaltake-th120-aio-argb"
+                        class="productos-img">
+                    <div class="productos-cont">
+                        <h3 class="productos__titulo">Watercooler Thermaltake</h3>
+                        <p class="productos-precio">$18.010</p>
+                        <div class="productos-cont-boton">
+                            <a class="productos-boton">¡Comprar!</a>
+                        </div>
+                    </div>
+                </article>
+                <article class="productos-articulo">
+                    <img src="../assets/img/productos/xbox-series-x.jpg" alt="xbox-series-x"
+                        class="productos-img">
+                    <div class="productos-cont">
+                        <h3 class="productos__titulo">XBOX Series X</h3>
+                        <p class="productos-precio">$199.999</p>
+                        <div class="productos-cont-boton">
+                            <a class="productos-boton">¡Comprar!</a>
+                        </div>
+                    </div>
+                </article>
             </div>
-        </article>
-        <article class="productos-articulo">
-            <img src="../assets/img/productos/combo-redragon-mouse--pad-m601wlba.jpg" alt=""
-                class="productos-img">
-            <div class="productos-cont">
-                <h3 class="productos__titulo">Titulo</h3>
-                <div class="productos-cont-boton">
-                    <button class="productos-boton"></button>
-                </div>
-            </div>
-        </article>
-        <article class="productos-articulo">
-            <img src="../assets/img/productos/combo-redragon-mouse--pad-m601wlba.jpg" alt=""
-                class="productos-img">
-            <div class="productos-cont">
-                <h3 class="productos__titulo">Titulo</h3>
-                <div class="productos-cont-boton">
-                    <button class="productos-boton"></button>
-                </div>
-            </div>
-        </article>
-        <article class="productos-articulo">
-            <img src="../assets/img/productos/combo-redragon-mouse--pad-m601wlba.jpg" alt=""
-                class="productos-img">
-            <div class="productos-cont">
-                <h3 class="productos__titulo">Titulo</h3>
-                <div class="productos-cont-boton">
-                    <button class="productos-boton"></button>
-                </div>
-            </div>
-        </article>
-        <article class="productos-articulo">
-            <img src="../assets/img/productos/combo-redragon-mouse--pad-m601wlba.jpg" alt=""
-                class="productos-img">
-            <div class="productos-cont">
-                <h3 class="productos__titulo">Titulo</h3>
-                <div class="productos-cont-boton">
-                    <button class="productos-boton"></button>
-                </div>
-            </div>
-        </article>
-        <article class="productos-articulo">
-            <img src="../assets/img/productos/combo-redragon-mouse--pad-m601wlba.jpg" alt=""
-                class="productos-img">
-            <div class="productos-cont">
-                <h3 class="productos__titulo">Titulo</h3>
-                <div class="productos-cont-boton">
-                    <button class="productos-boton"></button>
-                </div>
-            </div>
-        </article>
-        <article class="productos-articulo">
-            <img src="../assets/img/productos/combo-redragon-mouse--pad-m601wlba.jpg" alt=""
-                class="productos-img">
-            <div class="productos-cont">
-                <h3 class="productos__titulo">Titulo</h3>
-                <div class="productos-cont-boton">
-                    <button class="productos-boton"></button>
-                </div>
-            </div>
-        </article>
-        <article class="productos-articulo">
-            <img src="../assets/img/productos/combo-redragon-mouse--pad-m601wlba.jpg" alt=""
-                class="productos-img">
-            <div class="productos-cont">
-                <h3 class="productos__titulo">Titulo</h3>
-                <div class="productos-cont-boton">
-                    <button class="productos-boton"></button>
-                </div>
-            </div>
-        </article>
-        <article class="productos-articulo">
-            <img src="../assets/img/productos/combo-redragon-mouse--pad-m601wlba.jpg" alt=""
-                class="productos-img">
-            <div class="productos-cont">
-                <h3 class="productos__titulo">Titulo</h3>
-                <div class="productos-cont-boton">
-                    <button class="productos-boton"></button>
-                </div>
-            </div>
-        </article>
-        <article class="productos-articulo">
-            <img src="../assets/img/productos/combo-redragon-mouse--pad-m601wlba.jpg" alt=""
-                class="productos-img">
-            <div class="productos-cont">
-                <h3 class="productos__titulo">Titulo</h3>
-                <div class="productos-cont-boton">
-                    <button class="productos-boton"></button>
-                </div>
-            </div>
-        </article>
-        <article class="productos-articulo">
-            <img src="../assets/img/productos/combo-redragon-mouse--pad-m601wlba.jpg" alt=""
-                class="productos-img">
-            <div class="productos-cont">
-                <h3 class="productos__titulo">Titulo</h3>
-                <div class="productos-cont-boton">
-                    <button class="productos-boton"></button>
-                </div>
-            </div>
-        </article>
-        <article class="productos-articulo">
-            <img src="../assets/img/productos/combo-redragon-mouse--pad-m601wlba.jpg" alt=""
-                class="productos-img">
-            <div class="productos-cont">
-                <h3 class="productos__titulo">Titulo</h3>
-                <div class="productos-cont-boton">
-                    <button class="productos-boton"></button>
-                </div>
-            </div>
-        </article>
-        <article class="productos-articulo">
-            <img src="../assets/img/productos/combo-redragon-mouse--pad-m601wlba.jpg" alt=""
-                class="productos-img">
-            <div class="productos-cont">
-                <h3 class="productos__titulo">Titulo</h3>
-                <div class="productos-cont-boton">
-                    <button class="productos-boton"></button>
-                </div>
-            </div>
-        </article>
-        <article class="productos-articulo">
-            <img src="../assets/img/productos/combo-redragon-mouse--pad-m601wlba.jpg" alt=""
-                class="productos-img">
-            <div class="productos-cont">
-                <h3 class="productos__titulo">Titulo</h3>
-                <div class="productos-cont-boton">
-                    <button class="productos-boton"></button>
-                </div>
-            </div>
-        </article>
-        <article class="productos-articulo">
-            <img src="../assets/img/productos/combo-redragon-mouse--pad-m601wlba.jpg" alt=""
-                class="productos-img">
-            <div class="productos-cont">
-                <h3 class="productos__titulo">Titulo</h3>
-                <div class="productos-cont-boton">
-                    <button class="productos-boton"></button>
-                </div>
-            </div>
-        </article>
-        <article class="productos-articulo">
-            <img src="../assets/img/productos/combo-redragon-mouse--pad-m601wlba.jpg" alt=""
-                class="productos-img">
-            <div class="productos-cont">
-                <h3 class="productos__titulo">Titulo</h3>
-                <div class="productos-cont-boton">
-                    <button class="productos-boton"></button>
-                </div>
-            </div>
-        </article>
-        <article class="productos-articulo">
-            <img src="../assets/img/productos/combo-redragon-mouse--pad-m601wlba.jpg" alt=""
-                class="productos-img">
-            <div class="productos-cont">
-                <h3 class="productos__titulo">Titulo</h3>
-                <div class="productos-cont-boton">
-                    <button class="productos-boton"></button>
-                </div>
-            </div>
-        </article>
-    </div>
-    </section>
+        </section>
 
     </main>
 
@@ -286,16 +331,20 @@
             <div class="redes">
                 <ul>
                     <h4 class="redes-titulo">Seguinos en:</h4>
-                    <li><a href="#" class="facebook"><i class="bi bi-facebook"></i></a></li>
-                    <li><a href="#" class="twitter"><i class="bi bi-twitter"></i></a></li>
-                    <li><a href="#" class="youtube"><i class="bi bi-youtube"></i></a></li>
-                    <li><a href="#" class="instagram"><i class="bi bi-instagram"></i></a></li>
+                    <li><a href="https://www.facebook.com" target="_blank" class="facebook"><i
+                                class="bi bi-facebook"></i></a></li>
+                    <li><a href="https://twitter.com" target="_blank" class="twitter"><i class="bi bi-twitter"></i></a>
+                    </li>
+                    <li><a href="https://www.youtube.com/" target="_blank" class="youtube"><i
+                                class="bi bi-youtube"></i></a></li>
+                    <li><a href="https://www.instagram.com" target="_blank" class="instagram"><i
+                                class="bi bi-instagram"></i></a></li>
                 </ul>
             </div>
             <div class="ayuda">
                 <h4 class="ayuda-titulo">Ayuda:</h4>
                 <p class="ayuda-parrafo">Si tenés sugerencias o comentarios</p>
-                <a href="#" class="ayuda-btn">Contactanos</a>
+                <a href="../pages/contacto.html" class="ayuda-btn">Contactanos</a>
             </div>
         </section>
 
@@ -307,4 +356,5 @@
     </footer>
     <script src="../js/bootstrap.bundle.min.js"></script>
 </body>
+
 </html>
