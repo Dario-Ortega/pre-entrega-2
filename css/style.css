@@ -358,7 +358,7 @@ a{
 
 .footer-contacto{
     background: #0769e9;
-    height: 15vh;
+    height: 10vh;
     display: grid;
     grid-template-columns: repeat(2, 50%);
     justify-content: space-around;
@@ -461,7 +461,7 @@ a{
 
 @media (min-width:768px){
     .footer-contacto{
-        height: 23vh;
+        height: 13vh;
     }
     
     .ayuda{
@@ -476,7 +476,7 @@ a{
         
     .redes ul li a{
         padding: 4px 4px;
-        font-size: 25px;
+        font-size: 23px;
     }
     
     
@@ -493,7 +493,7 @@ a{
 
 @media (min-width:1200px){
     .footer-contacto{
-        height: 25vh;
+        height: 16vh;
     }
     
     .ayuda{
@@ -503,7 +503,7 @@ a{
     .redes-titulo,
     .ayuda-titulo,
     .ayuda-parrafo{
-        font-size: 30px;
+        font-size: 25px;
     }
         
     .redes ul li a{
@@ -520,6 +520,7 @@ a{
         background: var(--fondo);
         font-size: .9rem;
     }
+}
 /* ----Registrarse---- */
 
 .cont{
@@ -668,53 +669,103 @@ a{
 }
 
 /* ----Contacto---- */
-.mapa-titulo{
-    background: var(--principal);
-    text-align: center;
-    padding: 5px;
-    font-family: 'Roboto', sans-serif;
-    margin-top: 5px;
-    color: white;
-    text-transform: uppercase;
+.pag-contacto{
+    background: var(--fondo);
 }
+
+.mapa-titulo{
+    background-color: #0769e9;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.6rem;
+    text-transform: uppercase;
+    letter-spacing: .2rem;
+    font-weight: 700;
+    text-shadow: .1rem .1rem .1rem #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin: 0;
+}
+
+/* Seccion Mapa */
 
 .mapa-map{
     width: 100%;
     height: 400px;
 }
 
+/* Seccion Preguntas */
+
 .preguntas-titulo{
-    background: var(--principal);
-    text-align: center;
-    padding: 5px;
+    background-color: #0769e9;
     font-family: 'Roboto', sans-serif;
-    margin-top: 5px;
-    color: white;
+    font-size: 1.6rem;
     text-transform: uppercase;
+    letter-spacing: .2rem;
+    font-weight: 700;
+    text-shadow: .1rem .1rem .1rem #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin: 0;
 }
+
+.acordeon-titulo{
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+    letter-spacing: .2rem;
+    font-weight: 400;
+    text-shadow: .1rem .1rem .1rem #333;
+}
+
+.acordeon-pregunta{
+    font-family: 'Prompt', sans-serif;
+    text-shadow: .1rem .1rem .1rem (75, 75, 75);
+    font-weight: 400;
+    font-size: 1rem;
+}
+
+.acordeon-respuesta{
+    font-family: 'Josefin Sans', sans-serif;
+    text-shadow: .1rem .1rem .1rem (75, 75, 75);
+    font-weight: 400;
+    font-size: 1rem;
+}
+
+/* Seccion Contacto */
 
 .contacto{
     background-color: var(--principal);
-    font-size: 18px;
     border-radius: 14px;
     padding: 25px;
     display: grid;
     gap: 25px;
     color: white;
+    margin: 5px 5px;
 }
 
 .contacto p,
-.contacto h1,
+.contacto label,
 .contacto ul{
     margin: 0;
     padding: 0;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: .2rem;
+    text-shadow: .1rem .1rem .1rem #333;
+    font-weight: 700;
+    font-size: .9rem;
 }
 
 .contacto-titulo{
-    font-size: 30px;
-    font-weight: 500px;
     text-align: center;
     text-transform: uppercase;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.6rem;
+    letter-spacing: .2rem;
+    font-weight: 700;
+    text-shadow: .1rem .1rem .1rem #333;
+    text-align: center;
 }
 
 .contacto-detalles,
@@ -750,6 +801,12 @@ a{
     border: 1px solid white;
     cursor: pointer;
     transition: .3s all;
+    text-transform: uppercase;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.6rem;
+    letter-spacing: .2rem;
+    font-weight: 700;
+    text-shadow: .1rem .1rem .1rem #333;
 }
 
 .contacto-formulario-submit:hover{
@@ -771,13 +828,41 @@ a{
     font-size: 30px;
 }
 
-@media (min-width:760px){
+@media (min-width:768px){
+    .mapa-titulo{
+        font-size: 2rem;
+        letter-spacing: .3rem;
+        padding: 15px;
+    }
+    
+    .mapa-map{
+        height: 500px;
+    }
+
+    .preguntas-titulo{
+        font-size: 2rem;
+        letter-spacing: .3rem;
+        padding: 15px;
+    }
+    
+    .acordeon-titulo{
+        font-size: 1.5rem;
+    }
+    
+    .acordeon-pregunta{
+        font-size: 1.1rem;
+    }
+    
+    .acordeon-respuesta{
+        font-size: 1.1rem;
+    }
+    
+
     .contacto{
         font-size: 20px;
-        padding: 70px;
-        margin: 0 auto;
-        box-sizing: border-box;
+        margin: 5px 5px;
     }
+
     
     .contacto-titulo{
         font-size: 35px;
@@ -817,6 +902,52 @@ a{
         1fr       1fr;
         align-items: start;
     }
+}
+
+@media (min-width:1200px){
+    .mapa-titulo{
+        font-size: 2.5rem;
+        letter-spacing: .5rem;
+        padding: 20px;
+    }
+    
+    .mapa-map{
+        height: 550px;
+    }
+
+    .preguntas-titulo{
+        font-size: 2.5rem;
+        letter-spacing: .5rem;
+        padding: 20px;
+    }
+    
+    .acordeon-titulo{
+        font-size: 1.6rem;
+    }
+    
+    .acordeon-pregunta{
+        font-size: 1.2rem;
+    }
+    
+    .acordeon-respuesta{
+        font-size: 1.2rem;
+    }
+    
+
+    .contacto{
+        font-size: 25px;
+    }
+
+    
+    .contacto-titulo{
+        font-size: 38px;
+        text-align: center;
+    }
+    
+    .contacto-redes-cont{
+        justify-content: center;
+    }
+    
 }
 
 /* ----Productos---- */
